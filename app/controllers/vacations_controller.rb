@@ -1,10 +1,13 @@
 class VacationsController < ApplicationController
+  before_action :authenticate_user!
   before_action :set_vacation, only: [:show, :edit, :update, :destroy]
 
   # GET /vacations
   # GET /vacations.json
   def index
     @vacations = Vacation.all
+    
+    
   end
 
   # GET /vacations/1

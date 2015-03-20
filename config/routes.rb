@@ -10,5 +10,5 @@ Rails.application.routes.draw do
 
   resources :vacations
 
-  root to: 'vacations#index'
+  root to: 'welcome#index'
 end
