@@ -12,6 +12,7 @@
             <th>Days</th>
             <th>Name</th>
             <th>Dept</th>
+            <th>Status</th>
             <th colspan="3"></th>
           </tr>
         </thead>
@@ -23,6 +24,7 @@
               <td><%= vacation.days %></td>
               <td><%= vacation.name %></td>
               <td><%= vacation.dept %></td>
+              <td><%= vacation.status_type %></td>
               <td><%= link_to 'Show', vacation, class: "btn btn-mini btn-info" %></td>
               <td><%= link_to 'Edit', edit_vacation_path(vacation), class: "btn btn-mini btn-success" %></td>
               <td><%= link_to 'Destroy', vacation, method: :delete, class: "btn btn-mini btn-danger", data: { confirm: 'Are you sure?' } %></td>

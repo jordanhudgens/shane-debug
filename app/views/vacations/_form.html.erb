@@ -27,7 +27,15 @@
     <%= f.label :dept %><br>
     <%= f.text_field :dept %>
   </div>
+ <div class="control-group">
+<%= f.label "Status", class: 'control-label' %>
+<div class="controls">
+	<%= f.select(:status_type, options_for_select([['APPROVED', 'APPROVED'], ['PENDING', 'PENDING']]), { include_blank: true }) %> 
+</div>
+</div>
+  
+  
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit 'Submit', class: 'btn btn-mini btn-danger'  %>
   </div>
 <% end %>
