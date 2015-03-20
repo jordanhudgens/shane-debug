@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :employees
+
   devise_for :users
   get 'welcome/index'
 
