@@ -35,5 +35,5 @@
   <%= @employee.holidays %>
 </p>
 
-<%= link_to 'Edit', edit_employee_path(@employee) %> |
-<%= link_to 'Back', employees_path %>
+<%= link_to 'Edit', edit_employee_path(@employee), class: "btn btn-mini btn-danger" %> |
+<%= link_to 'Accept Changes', employees_path, class: "btn btn-mini btn-success" %>

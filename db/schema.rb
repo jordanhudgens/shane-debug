@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150320092401) do
+ActiveRecord::Schema.define(version: 20150320144605) do
 
   create_table "employees", force: :cascade do |t|
     t.string   "name"
@@ -46,11 +46,11 @@ ActiveRecord::Schema.define(version: 20150320092401) do
   create_table "vacations", force: :cascade do |t|
     t.datetime "date"
     t.integer  "days"
-    t.string   "name"
     t.string   "dept"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
     t.string   "status_type"
+    t.integer  "employee_id"
   end
 
 end
