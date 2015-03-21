@@ -1,6 +1,5 @@
 class RemoveNameFromVacations < ActiveRecord::Migration
   def change
-        remove_column :vacations, :name, :string
-     add_column :vacations, :employee_id, :integer
+    remove_column :vacations, :name, :string
   end
 end
